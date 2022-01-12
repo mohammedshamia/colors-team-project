@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "dotenv": "^10.0.0",
+    "@types/react-scroll": "^1.8.3",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-config-wesbos": "^1.0.1",
