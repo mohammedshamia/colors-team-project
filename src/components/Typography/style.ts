@@ -32,11 +32,6 @@ const Wrapper = styled.div<any>`
     Object.keys(props)
       .map((key: any) => `${key}: ${props?.[key]};`)
       .join(';')};
-  .ui {
-    background: linear-gradient(to right, #007fff, #0059b2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
 `;
 
 export default Wrapper;
