@@ -1,6 +1,6 @@
 {
   "name": "colorshopping",
-  "version": "0.1.0",
+"version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
@@ -12,8 +12,10 @@
     "@types/react-dom": "^17.0.11",
     "ag-grid-community": "^26.2.1",
     "ag-grid-react": "^26.2.0",
+    "formik": "^2.2.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
@@ -50,7 +52,6 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.20",
-    "redux-devtools-extension": "^2.13.9",
-    "typescript-styled-plugin": "^0.18.2"
+    "redux-devtools-extension": "^2.13.9"
   }
 }

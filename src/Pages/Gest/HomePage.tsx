@@ -1,4 +1,5 @@
 import React from 'react'
+import { InputController } from '../../Components/Form/InputController/InputController'
 
 interface Props {
     
@@ -7,7 +8,8 @@ interface Props {
 export const HomePage = (props: Props) => {
     return (
         <div>
-            hOME page
+            SSS
+           
         </div>
     )
 }

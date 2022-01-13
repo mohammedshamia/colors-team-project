@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "isolatedModules": false,
+
     "plugins": [
       {
         "name": "typescript-styled-plugin"
