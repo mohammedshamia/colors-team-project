@@ -1,12 +1,11 @@
-import Circle from './components/Circle';
-import Rating from './components/Rating';
+import { Container } from './components';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <Rating value={2.5} color="red" />
-      <Circle />
-    </div>
+    <Container direction="column" justifyContent="space-between">
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+    </Container>
   );
 };
 
