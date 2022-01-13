@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, useState } from 'react';
 import { CSSProperties } from 'styled-components';
 import CircleStyle from './styles';
 
@@ -7,18 +7,20 @@ export interface IProps extends HTMLAttributes<HTMLElement> {
   style?: CSSProperties;
   size?: string;
   bgColor?: string;
-  borderSize?: string;
   borderColor?: string;
+  active?: boolean;
 }
 
 const Circle = (props: IProps) => {
-  return <CircleStyle {...props} />;
+  const [isActive, setIsActive] = useState(false);
+  const toggleActive = () => setIsActive(!isActive);
+  return <CircleStyle onClick={toggleActive} {...props} active={isActive} />;
 };
 
 Circle.defaultProps = {
-  size: '100px',
-  bgColor: '#eee',
-  borderSize: '1px',
+  size: '40px',
+  bgColor: '#EDEAE3',
+  borderColor: '#242424',
 };
 
 export default Circle;

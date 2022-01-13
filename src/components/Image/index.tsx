@@ -4,6 +4,7 @@ interface IProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   width?: string;
   height?: string;
   fit?: string;
+  loading?: 'eager' | 'lazy' | undefined;
 }
 
 const Image = (props: IProps) => {
@@ -16,4 +17,5 @@ Image.defaultProps = {
   width: '100%',
   height: 'auto',
   fit: 'fill',
+  loading: 'lazy',
 };

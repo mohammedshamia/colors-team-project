@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { IconContext } from 'react-icons';
+import { useTheme } from 'styled-components';
 
 interface IProps {
   color?: string;
@@ -7,21 +8,18 @@ interface IProps {
   icon: ReactNode;
 }
 
-export const Icon = ({ size, icon, color }: IProps) => {
+export const Icon = ({ size = '1em', icon, color }: IProps) => {
+  const globalStyle = useTheme();
   return (
     <IconContext.Provider
       value={{
         size: `${size}`,
-        color,
+        // color: globalStyle
       }}
     >
       {icon}
     </IconContext.Provider>
   );
-};
-
-Icon.defaultProps = {
-  size: '1em',
 };
 
 export default Icon;
