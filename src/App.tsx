@@ -1,13 +1,15 @@
-import ComplexCard from './components/Card/productCard';
+import { Container } from './components';
 import { Divider } from './components/Divider';
-// import Theme
+import ComplexCard from './components/Card/productCard';
+import CategoryCard from './components/Card/categoryCard';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <Container direction="column" justifyContent="space-between">
       <Divider thick="5px" />
       <ComplexCard />
-    </div>
+      <CategoryCard />
+    </Container>
   );
 };
 
