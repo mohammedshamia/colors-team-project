@@ -18,7 +18,7 @@ export const Divider = styled('hr')<IdividerProps>(
     margin: `${margin}`,
     width: `${width}`,
     height: `${thick}`,
-    backgroundColor: `${props.theme?.palette?.primary.darkYallow}`,
+    backgroundColor: `${props.theme?.primary?.darkYallow}`,
     borderRadius: '4px',
   }),
 );
