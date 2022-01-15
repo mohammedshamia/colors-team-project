@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContainerWrapper = styled.div`
+export const ContainerWrapper = styled.div<any>`
   display: flex;
   flex-direction: ${props => props.direction || 'row'};
   align-items: ${props =>
