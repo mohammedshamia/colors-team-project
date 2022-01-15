@@ -5,10 +5,7 @@ import { EnumTheme, ToggleTheme, TypeTheme } from "./theme.type"
 interface IState{
     theme:TypeTheme
 }
-const  initialState:{
-    theme:TypeTheme
-
-}={
+const  initialState:IState={
     theme:"Light"
 }
 

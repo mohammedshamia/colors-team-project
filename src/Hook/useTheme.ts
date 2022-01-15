@@ -5,7 +5,7 @@ import { AppDispatch, AppState } from "../Redux"
 import { toggleTheme } from "../Redux/Theme/action.theme"
 import { ToggleTheme, TypeTheme } from "../Redux/Theme/theme.type"
 
-export function useTheme(): [TypeTheme, () => void] {
+export function UseTheme(): [TypeTheme, () => void] {
     const dispatch = useDispatch()
     const theme = useSelector<AppState, AppState['theme']['theme']>((state:AppState) => state.theme.theme)
     const themeToggle = useCallback(() => {

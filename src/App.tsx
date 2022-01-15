@@ -1,20 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {Providers} from'./providers'
-import  {HiOutlineMail} from'react-icons/hi'
-import { InputController } from './Components/Form/InputController/InputController';
+import React, { Suspense } from 'react';
+import { AllRouter } from './AllRouter';
+import ErrorBoundary from './Components/ErrorBoundary/ErrorBoundary';
+import { Navbar } from './Components/NavBar/Navbar';
+import { MainContainer } from './Components/Row';
+import { SpinnerContainer } from './Components/widget/SpinnerContainer';
+import { Providers } from './providers'
 function App() {
   return (
-    <div>
+    <Providers>
+      <MainContainer>
+      <Suspense fallback={<SpinnerContainer />}>
+          <ErrorBoundary>
+            <Navbar />
+            <AllRouter />
+          </ErrorBoundary>
+        </Suspense>
 
-    
-                  <InputController icon={<HiOutlineMail/>} errors='' placeholder='some  title'  label="enter" type="email" name={'some '}/>
-
-      
-     <Providers />
-    </div>
+      </MainContainer>
+    </Providers>
   );
-}
+};
 
 export default App;

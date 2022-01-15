@@ -1,31 +1,37 @@
 
 import React from 'react'
 import { Provider } from 'react-redux'
-import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { AllRouter } from './AllRouter'
-import { useTheme } from './Hook/useTheme'
+import { UseTheme } from './Hook/useTheme'
 import Store from './Redux'
+import { DarkTheme } from './Theme/DarkTheme'
 import GlobalStyle from './Theme/GloableStyle'
+import { LightTheme } from './Theme/LightTheme'
+import { HelmetProvider } from 'react-helmet-async'
+import { useDispatch, useSelector } from "react-redux"
+
 interface Props {
     
 }
 
-const ThemeProviderWrapper = (props) => {
-    const [theme] = useTheme()
-    return <ThemeProvider theme={theme==="Dark" ? dark : light} {...props} />
-  }
 
-export const Providers = (props: Props) => {
+
+  export const Providers:React.FC  = ({children}) => {
+   const  [theme]=UseTheme()
+   console.log("theme",theme);
+   
+
     return (
-        <Provider store={Store}>
-        <GlobalStyle/>
-        <ThemeProviderWrapper>
-        <BrowserRouter>
-        <AllRouter/>
-        </BrowserRouter>
 
-        </ThemeProviderWrapper>
-        </Provider>
+        <>
+        <HelmetProvider>
+<ThemeProvider theme={theme==="Dark" ? DarkTheme : LightTheme}  >          <GlobalStyle />
+               {children}
+</ThemeProvider>
+        </HelmetProvider>
+        </> 
+
+
     )
 }

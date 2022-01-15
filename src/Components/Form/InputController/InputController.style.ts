@@ -28,18 +28,14 @@ border-top-left-radius: 0;
 border-bottom-left-radius: 0;
 ::placeholder{
     padding-left: 5px;
-    color: ${({ theme }) => theme.colors.textSubtle};
 
 }
 &:disabled {
-    background-color: ${({ theme }) => theme.colors.backgroundDisabled};
     box-shadow: none;
-    color: ${({ theme }) => theme.colors.textDisabled};
     cursor: not-allowed;
   }
 
   &:focus:not(:disabled) {
-    box-shadow: ${({ theme }) => theme.shadows.focus};
   }
 
 `

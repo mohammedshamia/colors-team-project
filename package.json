@@ -1,6 +1,6 @@
 {
   "name": "colorshopping",
-"version": "0.1.0",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
@@ -10,21 +10,29 @@
     "@types/node": "^16.11.19",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.20",
     "ag-grid-community": "^26.2.1",
     "ag-grid-react": "^26.2.0",
     "formik": "^2.2.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-helmet-async": "^1.2.2",
     "react-icons": "^4.3.1",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-swipeable-views": "^0.14.0",
     "redux": "^4.1.2",
     "redux-thunk": "^2.4.1",
     "styled-components": "^5.3.3",
     "swiper": "^7.4.1",
     "typescript": "^4.5.4",
     "web-vitals": "^2.1.3"
+  },
+  "devDependencies": {
+    "@types/react-swipeable-views": "^0.13.1",
+    "@types/styled-components": "^5.1.20",
+    "redux-devtools-extension": "^2.13.9"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,6 +46,9 @@
       "react-app/jest"
     ]
   },
+  "resolutions": {
+    "styled-components": "^5"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -49,9 +60,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/styled-components": "^5.1.20",
-    "redux-devtools-extension": "^2.13.9"
   }
 }

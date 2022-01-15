@@ -17,27 +17,20 @@ if(process.env.NODE_ENV === 'production'){
 const reducers = combineReducers({
 
      cart: CartReducer,
-     theme:ThemeReducer
+     theme:ThemeReducer,
+     
    
 })
 
 
-const persistedTheme  = localStorage.getItem("theme");
 
 
-const initialState = {
-     theme:{
-          them: persistedTheme ? JSON.parse(persistedTheme) as TypeTheme : "Light"
-     },
-
-}
 
 
 
 const Store = createStore(
      reducers,
-     // initialState,
-     enhancer,
+enhancer
 )
 export type AppDispatch = typeof Store.dispatch
 export type AppState = ReturnType<typeof reducers>
@@ -47,3 +40,10 @@ declare const Window: any
 
 Window.store = Store
 export default Store
+
+
+
+
+
+
+
