@@ -14,6 +14,7 @@ export const Icon = ({ size = '1em', icon, color }: IProps) => {
     <IconContext.Provider
       value={{
         size: `${size}`,
+        color: `${globalStyle}`,
         // color: globalStyle
       }}
     >
