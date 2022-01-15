@@ -4,7 +4,7 @@ interface Props {
   
 }
 
-export const Login = (props: Props) => {
+ const Login = (props: Props) => {
   return (
     <div>
       LoginPAGE
@@ -12,3 +12,7 @@ export const Login = (props: Props) => {
     </div>
   )
 }
+
+
+
+export  default Login;

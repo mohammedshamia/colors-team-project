@@ -11,3 +11,6 @@ export const SearchScreen = (props: Props) => {
         </div>
     )
 }
+
+
+export  default SearchScreen

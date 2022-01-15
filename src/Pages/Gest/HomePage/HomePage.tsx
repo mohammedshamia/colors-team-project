@@ -43,3 +43,6 @@ export const HomePage = (props: Props) => {
         </InnerColSection>
     )
 }
+
+
+export  default HomePage;
