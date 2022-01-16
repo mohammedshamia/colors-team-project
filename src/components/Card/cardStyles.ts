@@ -38,8 +38,8 @@ export const Content = styled('div')<IcontentProp>(
     height = 'none',
     maxHeight = '60%',
     margin = '5px auto',
-    ...props
-  }: IcontentProp) => ({
+  }: // ...props
+  IcontentProp) => ({
     display: 'flex',
     padding: `${padding}`,
     width: `${width}`,
@@ -54,8 +54,8 @@ export const Header = styled('div')(
     height = '50px',
     width = '100%',
     padding = '10px',
-    ...props
-  }: IheaderProps) => ({
+  }: // ...props
+  IheaderProps) => ({
     display: 'flex',
     height: `${height}`,
     width: `${width}`,
@@ -64,7 +64,7 @@ export const Header = styled('div')(
 );
 
 export const Action = styled('div')<IactionProps>(
-  ({ padding = '10px', width = '100%', ...props }: IactionProps) => ({
+  ({ padding = '10px', width = '100%' }: IactionProps) => ({
     display: 'flex',
     flexDirection: 'row' as const,
     padding: `${padding}`,
@@ -80,7 +80,7 @@ export const ContentAction = styled.div<CSSProperties>(
     height = 'none',
     border = 'none',
     margin = '5px auto',
-    ...props
+    // ...props
   }) => ({
     display: 'flex',
     padding: `${padding}`,
