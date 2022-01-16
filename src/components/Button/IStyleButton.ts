@@ -1,4 +1,8 @@
+import React, { ReactNode, CSSProperties } from 'react';
+
 export interface IStyleButton {
+  style?: CSSProperties;
+  children: ReactNode;
   minWidth?: string;
   borderRadius?: string;
   border?: string;
