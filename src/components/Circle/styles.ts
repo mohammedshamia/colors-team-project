@@ -7,7 +7,7 @@ const CircleStyle = styled.div<IProps>(
     borderRadius: '50%',
     width: `${size}`,
     height: `${size}`,
-    backgroundColor: `${bgColor || props.theme.background.lightGray}`,
+    backgroundColor: `${bgColor || props.theme.palette?.background.lightGrey}`,
     border:
       active === true
         ? `2px solid ${
