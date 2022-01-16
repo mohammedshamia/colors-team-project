@@ -139,6 +139,7 @@ export const CardContainerWithoutLink = styled(Column)<{
   height: 100%;
   opacity: 1;
   position: relative;
+  min-width:520px;
   ${(props) =>
     props.widthBorder
     && css`
@@ -156,7 +157,7 @@ align-items: center;
   height: 100%;
   justify-content: center;
   width: 100%;
-  margin: 23px;
+  margin: 20px;
   &:first-child and :last-child {
     margin: 0 0;
   }
