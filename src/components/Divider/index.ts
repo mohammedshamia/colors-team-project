@@ -1,6 +1,6 @@
 import styled, { DefaultTheme } from 'styled-components';
 
-interface IDividerProps {
+interface IDividerProps extends DefaultTheme {
   width?: string;
   thick?: string;
   color?: string;

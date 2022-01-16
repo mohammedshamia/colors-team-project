@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { AiOutlinePlus } from 'react-icons/ai';
+import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 import { Icon } from '..';
 import { Button } from '../Button/ButtonStyle';
 
@@ -19,6 +19,16 @@ const Value = styled.div`
 `;
 
 const Counter = () => {
+  const [number, setNumber] = useState(0);
+
+  const increase = () => {
+    setNumber(prev => prev + 1);
+  };
+
+  const decrease = () => {
+    setNumber(prev => prev - 1);
+  };
+
   return (
     <>
       <Count>
@@ -28,16 +38,18 @@ const Counter = () => {
           border="1px solid #FCDD06"
           background="#FFFFFF"
           padding="none"
+          onClick={decrease}
         >
-          <Icon icon={<AiOutlinePlus />} />
+          <Icon icon={<AiOutlineMinus />} />
         </Button>
-        <Value>88</Value>
+        <Value>{number}</Value>
         <Button
           width="48px"
           borderRadius="none"
           border="1px solid #FCDD06"
           background="#FFFFFF"
           padding="none"
+          onClick={increase}
         >
           <Icon icon={<AiOutlinePlus />} />
         </Button>
