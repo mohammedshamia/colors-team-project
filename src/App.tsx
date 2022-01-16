@@ -1,10 +1,8 @@
-import { Container, Divider } from './components';
+ 
 
 const App: React.FC = () => {
   return (
-    <Container direction="column" justifyContent="space-between">
-      <Divider thick="5px" />
-    </Container>
+    <h1>landing </h1>
   );
 };
 
