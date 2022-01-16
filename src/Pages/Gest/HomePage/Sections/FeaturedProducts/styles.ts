@@ -10,7 +10,7 @@ border-radius: 16px;
 box-shadow:  4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 color: #242424;
 display: flex;
-flex-direction : column;
+flex-direction:column;
 height: 655px;
 justify-content: center;
 overflow:hidden;
@@ -52,7 +52,7 @@ export const DiscountCard = styled("p")`
 letter-spacing: 0.6px;
 color: #FC4059;
 `;
-export const PriceCard = styled("p")<{ isDiscount?: boolean }>`
+export const PriceCard = styled("p") <{ isDiscount?: boolean }>`
   color: #242424;
   font-size: 30px;
   letter-spacing: 0.6px;
@@ -79,7 +79,7 @@ height:62px;
 border-radius: 10px;
 opacity:1;
 `;
-export const AddToCartButton = styled(Link)<{ disabled?: boolean }>`
+export const AddToCartButton = styled(Link) <{ disabled?: boolean }>`
   align-content: center;
   align-items: center;
   background: #f2f2f2 !important;
@@ -126,44 +126,8 @@ export const FeaturedProductsContainer = styled(Column)`
   height: auto;
   opacity: 1;
   width: 100%;
-  min-height:948px
+  min-height:948px;
 `;
-
-export const CardsCategory = styled(Row)`
-  margin-top: 2rem;
-`
-
-export const CardContainerWithoutLink = styled(Column)<{
-  widthBorder: boolean;
-}>`
-  height: 100%;
-  opacity: 1;
-  position: relative;
-  min-width:520px;
-  ${(props) =>
-    props.widthBorder
-    && css`
-  box-shadow: 0px 2px 20px #08091E1A;
-  border-left: 1px solid #F2F2F2;
-  `}
-  text-decoration: none;
-align-items: center;
-  background: #ffffff;
-  border-radius: 16px;
-  overflow: hidden;
-  display: flex;
-  color: #242424;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  width: 100%;
-  margin: 20px;
-  &:first-child and :last-child {
-    margin: 0 0;
-  }
-`;
-
-
 export const WrapperDots = styled(Row)`
 align-items:center;
 height:40px;
@@ -172,11 +136,16 @@ margin:10px 0px;
 width:auto;
 margin: 0px;
 `;
+export const CardsCategory = styled(Row)`
+  margin-top: 2rem;
+`
+
 
 export const RowInnerSlider = styled(Row)`
 justify-content: space-between;
 margin-top:43px;
 border-radius: 16px;
+overflow: hidden;
 `;
 
 
@@ -200,3 +169,36 @@ top:-36px
 
 
 
+
+
+export const CardContainerWithoutLink = styled(Column) <{
+  widthBorder: boolean;
+}>`
+  height: 100%;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+
+  min-width:520px;
+  width:520px;
+  ${(props) =>
+    props.widthBorder
+    && css`
+  box-shadow: 0px 2px 20px #08091E1A;
+  border-left: 1px solid #F2F2F2;
+  `}
+  text-decoration: none;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  color: #242424;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+  margin: 20px;
+  &:first-child and :last-child {
+    margin:0px;
+  }
+`;

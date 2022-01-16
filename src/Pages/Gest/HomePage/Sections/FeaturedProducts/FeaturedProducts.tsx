@@ -54,7 +54,7 @@ export const FeaturedProduct = () => {
 
 
  const chunkSize =
-    window.innerWidth > 1100 ? 4 : window.innerWidth > 1100 ? 2 : 1
+    window.innerWidth > 1100 ? 3 : window.innerWidth > 1100 ? 2 : 1
   const getSlides = () => {
     const chunks: any = []
 
