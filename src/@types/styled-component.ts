@@ -2,22 +2,20 @@ import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    palette?: {
-      common: {
-        black: string;
-        white: string;
-      };
-      primary: {
-        lightYallow: string;
-        darkYallow: string;
-        disCount: string;
-      };
-      background: {
-        grey: string;
-        lightGrey: string;
-        darkGrey: string;
-        border: string;
-      };
+    common?: {
+      black: string;
+      white: string;
+    };
+    primary?: {
+      lightYallow: string;
+      darkYallow: string;
+      disCount: string;
+    };
+    background?: {
+      grey: string;
+      lightGrey: string;
+      darkGrey: string;
+      border: string;
     };
     Typography?: {
       color: string;

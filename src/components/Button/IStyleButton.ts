@@ -11,4 +11,5 @@ export interface IStyleButton {
   height?: string;
   padding?: string;
   letterSpace?: string;
+  margin?: string;
 }

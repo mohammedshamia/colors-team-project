@@ -22,7 +22,7 @@ const getTypographySize = (variant: string) => {
 const Wrapper = styled.div<any>`
   /* color: ${props => props.color || 'black'}; */
   font-weight: ${props => (props?.bold || props?.variant === 'h2' ? 750 : 500)};
-  color: ${props => props?.color || props.theme.text.primary};
+  color: ${props => props?.color || props.theme?.Typography.color};
   font-size: ${props =>
     props?.fontSize || getTypographySize(props?.variant || '')};
   width: ${props => props?.width || '100%'};
