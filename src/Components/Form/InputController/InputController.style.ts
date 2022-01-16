@@ -5,6 +5,8 @@ export  const  FiledWrapper=styled('div')`
 display: flex;
 flex-direction: column;
 width:100%;
+margin-bottom: 30px;
+
 `
 
 
@@ -21,21 +23,29 @@ font-weight: bold;
 export const Input=styled('input')<{isError:boolean ,isSuccess?:boolean}>`
 width:100% !important;
 min-height:40px;
-border: ${props => props.isError ? '1px solid red': '1px solid green'};
-border-radius: 6px;
+border: none;
+
+/* border: ${props => props.isError ? '1px solid red': '1px solid green'}; */
+/* border-radius: 6px; */
 border-left: none;
-border-top-left-radius: 0;
+/* border-top-left-radius: 0; */
 border-bottom-left-radius: 0;
+background: transparent;
 ::placeholder{
     padding-left: 5px;
+    outline: none;
 
 }
 &:disabled {
     box-shadow: none;
     cursor: not-allowed;
-  }
+    outline: none;
+
+}
 
   &:focus:not(:disabled) {
+      outline: none;
+      border-left: none;
   }
 
 `
@@ -46,12 +56,15 @@ border-radius: 6px;
 width:100% ;
 display:flex;
 min-height: 40px;
+
 `;
 
 
 
 export  const  WrapperIcon=styled(Row)`
 padding: 10px;
+width:40px;
+height: auto;
 `
 
 

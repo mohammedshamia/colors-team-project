@@ -26,13 +26,13 @@ export const InputController = (props: InputControllerProps) => {
                 {props.label}
             </Label>}
            
-            <InputWrapper isError={true} >
+            <InputWrapper isError={!!props.errors?.length} >
                 { props.icon && <WrapperIcon JC='center' item='center'>
                     {props.icon}
                 </WrapperIcon> }
                
                 <Input
-                isError={true}
+                isError={!!props.errors?.length}
                     onChange={props.onChange}
                     type={props.type}
                     defaultValue={props.defaultValue}
