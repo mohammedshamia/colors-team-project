@@ -1,11 +1,7 @@
-import { Container, Divider } from './components';
+import { Container } from './components';
 
 const App: React.FC = () => {
-  return (
-    <Container direction="column" justifyContent="space-between">
-      <Divider thick="5px" />
-    </Container>
-  );
+  return <Container direction="column" justifyContent="space-between" />;
 };
 
 export default App;
