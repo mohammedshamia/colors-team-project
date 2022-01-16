@@ -17,6 +17,7 @@ declare module 'styled-components' {
       darkGrey: string;
       border: string;
     };
+
     Typography?: {
       color: string;
       fontFamily: string;
