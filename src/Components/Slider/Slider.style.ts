@@ -72,12 +72,11 @@ max-width: 220px;
 export const  WrapperImageHero=styled(Column)`
     max-width: 627px;
     margin-top: 10px;
-}
+    display: flex;
+justify-content:center;
+align-items: center;
 
-`
-
-
-
+`;
 
 
 
@@ -93,6 +92,9 @@ background:${(props) => props.isGrey ? '#70707030' : '#FCDD06 '};
 border-radius: 50%;
 width: ${(props) => props.width};
 height: ${(props) => props.width};
+display: flex;
+justify-content:center;
+align-items: center;
 margin: 0 20px;
 `
 
@@ -100,12 +102,26 @@ interface IArrow {
     isLeft?: boolean,
     color?: string
 }
+// width="auto" JC="center" item="center" style={{marginBottom:"32px"}}
+
+export  const RowArrowWrapper=styled(Row)`
+width:auto;
+justify-content: center;
+align-items: center;
+margin-bottom: 32px;;
+
+
+
+`
 
 export const Arrow = styled('div') <IArrow>`
 font-size: 35px;
 font-weight:bold;
 font-weight: 700;
 margin:'0px 23px';
+display: flex;
+justify-content:center;
+align-items: center;
 width:30px;
 ${(props) => props.isLeft && css` transform:rotate(-180deg)` }
 `

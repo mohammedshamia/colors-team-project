@@ -1,6 +1,7 @@
 import { DefaultTheme } from "styled-components"
 
 export const DarkTheme: DefaultTheme={
+    main:'#FCDD06',
     nav:{
         Bg: '#242424',
         textColor: 'black',

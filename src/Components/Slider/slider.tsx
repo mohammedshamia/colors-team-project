@@ -3,7 +3,7 @@ import SwipeableViews from 'react-swipeable-views'
 import { SliderItem } from './SliderItem'
 import { Column } from '../Col'
 import { InnerSection, Row } from '../Row'
-import { Arrow, Dot } from './Slider.style'
+import { Arrow, Dot, RowArrowWrapper } from './Slider.style'
 
 const cssStyle: CSSProperties = {
     position: 'relative',
@@ -64,11 +64,10 @@ export const Slider = ({ data }: IProps) => {
                     <SwipeableViews index={sliderIndex} style={cssStyle}>
                         {sliders}
                     </SwipeableViews>
-                    <Row width="auto" JC="center" item="center" style={{marginBottom:"32px"}}>
+                    <RowArrowWrapper>
                         <Arrow isLeft={true} onClick={handleRight}>
                             &#8250;
                         </Arrow>
-
                         {Array(3)
                             .fill(0)
                             .map((x, index) => (
@@ -79,7 +78,7 @@ export const Slider = ({ data }: IProps) => {
                                 />
                             ))}
                         <Arrow onClick={handleLeft}>&#8250;</Arrow>
-                    </Row>
+                    </RowArrowWrapper>
                 </Column>
             </InnerSection>
         </Column>

@@ -127,6 +127,7 @@ export const SearchInput = styled('input')`
     }
 `
 export const List = styled('ul')`
+  text-decoration: none;
 
 align-items: center;
 display: flex;
@@ -141,6 +142,8 @@ letter-spacing: 0.2px;
 list-style: none;
 margin-left: 20px;
 opacity: 1;
+text-decoration: none;
+
 
 `;
 export const LogoTextYellow = styled(Link)`
@@ -148,12 +151,16 @@ color: ${(props)=>props.theme.nav.logo.leftText};
 font-size:40px;
 letter-spacing: 1.6px;
 opacity: 1;
+text-decoration: none;
+
 `
 export const LogoTextWhite = styled(Link)`
   color: ${(props)=>props.theme.nav.logo.rightText};
 font-size:40px;
 letter-spacing: 1.6px;
 opacity: 1;
+text-decoration: none;
+
 `
 export const StyleObj: CSSProperties = {
      fontSize: 22,

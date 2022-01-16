@@ -1,6 +1,8 @@
 import { DefaultTheme } from "styled-components";
 
 export const LightTheme: DefaultTheme={
+    main:'#FCDD06',
+
     nav:{
         Bg: '#242424',
         textColor: 'white',
