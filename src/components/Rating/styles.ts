@@ -6,6 +6,7 @@ interface IProps {
 
 const StarIcon = styled.i<IProps>(({ color = '#f8e825', ...props }) => ({
   color: `${color || props.theme.primary?.lightYallow}`,
+
 }));
 
 export default StarIcon;
