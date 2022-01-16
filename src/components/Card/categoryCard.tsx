@@ -1,4 +1,3 @@
-import React from 'react';
 import Typography from '../Typography';
 import { Content, ContentAction, MainCard } from './cardStyles';
 import img from '../../assets/tow.jpg';
