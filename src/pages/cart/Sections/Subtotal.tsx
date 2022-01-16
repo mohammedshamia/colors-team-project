@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../../../components/Button/Button';
 import { Container } from '../../../components';
-import { Divider } from '../../../components/Divider';
+import Divider from '../../../components/Divider';
 import Typography from '../../../components/Typography';
 // import Counter from '../../../components/Counter';
 

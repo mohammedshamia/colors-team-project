@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { GlobalStyle } from './styles';
 import { Container } from '../../components';
 import Path from '../../components/Path';
-import CartList from './components/CartList';
-import Subtotal from './components/Subtotal';
+import CartList from './Sections/CartList';
+import Subtotal from './Sections/Subtotal';
 // import { useDispatch, useSelector } from 'react-redux';
 
-const Card = () => {
+const Cart = () => {
   const [cartItems, setCartItems] = useState([
     {
       id: 'One',
@@ -58,4 +58,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Cart;

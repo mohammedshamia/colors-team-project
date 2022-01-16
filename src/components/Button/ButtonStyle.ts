@@ -5,33 +5,33 @@ import { IStyleButton } from './IStyleButton';
 
 const ButtonStyle = styled.button<IStyleButton>(
   ({
-    minWidth = '100px',
     width = 'none',
     height = 'none',
     padding = '16px 32px',
-    borderRadius = '4px',
+    borderRadius = '10px',
     border = 'none',
     fontWeight = 'bold',
-    background = '#FCDD06',
+    background,
     color = '#242424',
     fontSize = '16px / 220px',
     cursor = 'pointer',
     letterSpace = '0px',
+    margin = 'none',
     ...props
   }) => ({
-    minWidth: `${minWidth}`,
     width: `${width}`,
     height: `${height}`,
     padding: `${padding}`,
     borderRadius: `${borderRadius}`,
     border: `${border}`,
     fontWeight: `${fontWeight}`,
-    background: `${background}`,
+    background: `${props.theme.background?.lightGrey || background}`,
     color: `${color}`,
     fontSize: `${fontSize}`,
     cursor: `${cursor}`,
     letterSpacing: `${letterSpace}`,
     alignItems: 'baseline',
+    margin: `${margin}`,
   }),
 );
 
