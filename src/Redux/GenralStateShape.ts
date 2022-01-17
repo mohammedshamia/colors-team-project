@@ -1,8 +1,4 @@
-
-
-export interface IGeneralState{
-    loading:boolean,
-    error:string
-
-
+export interface IGeneralState {
+  loading: boolean;
+  error: string;
 }

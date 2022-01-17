@@ -1,4 +1,13 @@
-import { useState } from 'react'
+/* eslint-disable import/extensions */
+import { useState } from 'react';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { FaUserAlt } from 'react-icons/fa';
+import { BsFillBookmarkDashFill, BsFillCartFill } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
+import { BiLogOut } from 'react-icons/bi';
+import { useToken } from '../../Hook/Toke';
+import { ListNavItem } from './ListNavItem';
 import {
   List,
   LogoTextYellow,
@@ -10,20 +19,13 @@ import {
   SearchButton,
   SearchInput,
   NavInnerSection,
-  NavBoxLogo
-} from './NavBar.styles'
+  NavBoxLogo,
+} from './NavBar.styles';
 
-import { ListNavItem } from './ListNavItem'
-import { useSelector, useDispatch } from 'react-redux'
-import { useToken } from '../../Hook/Toke'
-import {FaUserAlt} from'react-icons/fa'
-import { BsFillBookmarkDashFill, BsFillCartFill } from 'react-icons/bs'
-import { useNavigate } from 'react-router-dom'
-import { BiLogOut } from 'react-icons/bi'
 export const Navbar = () => {
-     const [value, setValue] = useState < string >('')
-     const navigate=useNavigate()
-const token = useToken()
+  const [value, setValue] = useState<string>('');
+  const navigate = useNavigate();
+  const token = useToken();
   return (
     <NavContainer>
       <NavInnerSection>
@@ -37,13 +39,13 @@ const token = useToken()
             value={value}
             type="text"
             placeholder="Search"
-            onChange={(e) => {
-              setValue(e.target.value)
+            onChange={e => {
+              setValue(e.target.value);
             }}
           />
           <SearchButton
             onClick={() => {
-              navigate(`/search${value ? `?keyword=${value}` : ''}`)
+              navigate(`/search${value ? `?keyword=${value}` : ''}`);
             }}
           >
             <StyledSearchIcon />
@@ -65,13 +67,13 @@ const token = useToken()
 
             {token && (
               <>
-                <ListNavItem to="/cart" isBadge={true} countBadge={2} title="Cart">
+                <ListNavItem to="/cart" isBadge countBadge={2} title="Cart">
                   <BsFillCartFill style={StyleObj} />
                 </ListNavItem>
                 <ListNavItem
                   to="/"
                   title="logout"
-                  onClick={()=>console.log("out")}
+                  onClick={() => console.log('out')}
                 >
                   <BiLogOut style={StyleObj} />
                 </ListNavItem>
@@ -81,5 +83,5 @@ const token = useToken()
         </NavBox>
       </NavInnerSection>
     </NavContainer>
-  )
-}
+  );
+};

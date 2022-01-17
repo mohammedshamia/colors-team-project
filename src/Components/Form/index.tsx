@@ -1,1 +1,1 @@
-export  {InputController} from'./InputController/InputController'
+export { InputController } from './InputController/InputController';

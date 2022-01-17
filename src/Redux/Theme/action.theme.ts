@@ -1,12 +1,9 @@
-import { EnumTheme, TypeTheme } from "./theme.type"
+/* eslint-disable import/extensions */
+import { EnumTheme, TypeTheme } from './theme.type';
 
-
-export const  toggleTheme=(theme:TypeTheme="Light")=>({
-    type:EnumTheme.ToggleTheme,
-    payload:{
-        theme:theme==="Dark"?"Light":"Dark"
-    }
-})
-
-
-
+export const toggleTheme = (theme: TypeTheme = 'Light') => ({
+  type: EnumTheme.ToggleTheme,
+  payload: {
+    theme: theme === 'Dark' ? 'Light' : 'Dark',
+  },
+});

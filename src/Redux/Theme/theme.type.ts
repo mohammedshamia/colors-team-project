@@ -1,19 +1,14 @@
-import { Action } from 'redux'
-
+import { Action } from 'redux';
 
 export enum EnumTheme {
-    "ToggleTheme" = "ToggleTheme"
+  'ToggleTheme' = 'ToggleTheme',
 }
 
-
-
-export type TypeTheme = "Dark" | "Light"
+export type TypeTheme = 'Dark' | 'Light';
 
 export interface ToggleTheme extends Action<string> {
-    type: EnumTheme.ToggleTheme,
-    payload: {
-        theme: TypeTheme
-    }
-
-
+  type: EnumTheme.ToggleTheme;
+  payload: {
+    theme: TypeTheme;
+  };
 }

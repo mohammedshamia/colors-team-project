@@ -22,8 +22,3 @@ export const Divider = styled('hr')<IdividerProps>(
     borderRadius: '4px',
   }),
 );
-
-
-
-
-

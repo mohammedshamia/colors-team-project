@@ -4,21 +4,21 @@ import ErrorBoundary from './Components/ErrorBoundary/ErrorBoundary';
 import { Navbar } from './Components/NavBar/Navbar';
 import { MainContainer } from './Components/Row';
 import { SpinnerContainer } from './Components/widget/SpinnerContainer';
-import { Providers } from './providers'
+import { Providers } from './providers';
+
 function App() {
   return (
     <Providers>
       <MainContainer>
-      <Suspense fallback={<SpinnerContainer />}>
+        <Suspense fallback={<SpinnerContainer />}>
           <ErrorBoundary>
             <Navbar />
             <AllRouter />
           </ErrorBoundary>
         </Suspense>
-
       </MainContainer>
     </Providers>
   );
-};
+}
 
 export default App;

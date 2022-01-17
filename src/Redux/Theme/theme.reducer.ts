@@ -1,27 +1,25 @@
-import { EnumTheme, ToggleTheme, TypeTheme } from "./theme.type"
+/* eslint-disable import/extensions */
+import { EnumTheme, ToggleTheme, TypeTheme } from './theme.type';
 
-
-
-interface IState{
-    theme:TypeTheme
+interface IState {
+  theme: TypeTheme;
 }
-const  initialState:IState={
-    theme:"Light"
-}
+const initialState: IState = {
+  theme: 'Light',
+};
 
+export const ThemeReducer = (
+  state = initialState,
+  action: ToggleTheme,
+): IState => {
+  switch (action.type) {
+    case EnumTheme.ToggleTheme:
+      return {
+        ...state,
+        theme: action.payload.theme,
+      };
 
-export const  ThemeReducer=(state=initialState,action:ToggleTheme):IState=>{
-
-    switch (action.type) {
-        case EnumTheme.ToggleTheme:
-
-             return {
-                  ...state,
-                  theme:action.payload.theme
-               
-             }
-
-default :return state
-
-}
-}
+    default:
+      return state;
+  }
+};

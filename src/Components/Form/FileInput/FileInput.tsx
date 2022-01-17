@@ -1,6 +1,7 @@
 /* eslint-disable import/extensions */
 import React, { ChangeEvent, ReactNode } from 'react';
-import { Checkbox, Remember, WarperCheckBox } from './CheckBox.style';
+import { AiOutlinePlus } from 'react-icons/ai';
+import { InputFile, WarperFileBox } from '../CheckBox/CheckBox.style';
 
 interface Props {
   name?: string;
@@ -12,16 +13,16 @@ interface Props {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const CheckBox = ({ name, ...props }: Props) => {
+export const FileInput = ({ name, ...props }: Props) => {
   return (
-    <WarperCheckBox JC="center" item="center">
-      <Checkbox
+    <WarperFileBox JC="center" item="center">
+      <AiOutlinePlus size="40px" />
+      <InputFile
         onChange={props.onChange}
         id={name}
         name={name}
-        checked={props.value}
+        multiple={false}
       />
-      <Remember>{props.label}</Remember>
-    </WarperCheckBox>
+    </WarperFileBox>
   );
 };

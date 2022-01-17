@@ -1,16 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-interface Props {
-    
-}
+const ProductItem = () => {
+  return <div>ProductItem</div>;
+};
 
- const ProductItem = (props: Props) => {
-    return (
-        <div>
-            ProductItem
-        </div>
-    )
-}
-
-
-export default ProductItem
+export default ProductItem;

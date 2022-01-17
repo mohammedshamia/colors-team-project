@@ -1,28 +1,28 @@
-import styled, { css } from "styled-components";
-import { Link } from "react-router-dom";
-import { Column, Row } from "../../../../../Components/Row";
+import styled, { css } from 'styled-components';
+import { Link } from 'react-router-dom';
+import { Column, Row } from '../../../../../Components/Row';
 
 export const ContainerCard = styled(Link)`
-align-items:center;
-text-decoration: none;
-background: #FFFFFF;
-border-radius: 16px;
-box-shadow:  4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-color: #242424;
-display: flex;
-flex-direction:column;
-height: 655px;
-justify-content: center;
-overflow:hidden;
-opacity: 1;
-width: 520px;
-&:first-child and :last-child{
+  align-items: center;
+  text-decoration: none;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: #242424;
+  display: flex;
+  flex-direction: column;
+  height: 655px;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 1;
+  width: 520px;
+  &:first-child and :last-child {
     margin: 0 0;
-}
-
+  }
 `;
 
-export const ImageCard = styled("img")`
+export const ImageCard = styled('img')`
   height: 100%;
   height: 342px;
   margin-bottom: 34px;
@@ -32,7 +32,7 @@ export const ImageCard = styled("img")`
   width: 100%;
 `;
 
-export const TitleCard = styled("h3")`
+export const TitleCard = styled('h3')`
   color: #242424;
   font-size: 24px;
   letter-spacing: 0.48px;
@@ -42,44 +42,43 @@ export const TitleCard = styled("h3")`
   text-decoration: none;
 `;
 
-export const DiscountCard = styled("p")`
+export const DiscountCard = styled('p')`
   color: #fc4059;
   font-size: 30px;
   letter-spacing: 0.6px;
   margin-right: 12px;
   opacity: 1;
   font-family: normal normal bold 30px/15px Muli;
-letter-spacing: 0.6px;
-color: #FC4059;
+  letter-spacing: 0.6px;
+  color: #fc4059;
 `;
-export const PriceCard = styled("p") <{ isDiscount?: boolean }>`
+export const PriceCard = styled('p')<{ isDiscount?: boolean }>`
   color: #242424;
   font-size: 30px;
   letter-spacing: 0.6px;
   margin-right: 8px;
   opacity: 1;
-  text-decoration: ${(props) => (props.isDiscount ? "line-through" : "none")};
-  
+  text-decoration: ${props => (props.isDiscount ? 'line-through' : 'none')};
 `;
 
 export const RowPrice = styled(Row)`
   align-items: center;
   font-weight: bold;
   justify-content: center;
-  margin-top:19px;
-  margin-bottom:16px;
+  margin-top: 19px;
+  margin-bottom: 16px;
 `;
 
-export const BockBarkButton = styled("button")`
-border: 10px solid transparent;
-cursor: pointer;
-margin-right:28px;
-width: 54px;
-height:62px;
-border-radius: 10px;
-opacity:1;
+export const BockBarkButton = styled('button')`
+  border: 10px solid transparent;
+  cursor: pointer;
+  margin-right: 28px;
+  width: 54px;
+  height: 62px;
+  border-radius: 10px;
+  opacity: 1;
 `;
-export const AddToCartButton = styled(Link) <{ disabled?: boolean }>`
+export const AddToCartButton = styled(Link)<{ disabled?: boolean }>`
   align-content: center;
   align-items: center;
   background: #f2f2f2 !important;
@@ -97,17 +96,16 @@ export const AddToCartButton = styled(Link) <{ disabled?: boolean }>`
   text-decoration: none;
   text-transform: capitalize;
   width: 324px;
-  ${(props) =>
-    props.disabled
-    && css`
-        background:gray;
-        color:white;
-        cursor: none;
-  `}
+  ${props =>
+    props.disabled &&
+    css`
+      background: gray;
+      color: white;
+      cursor: none;
+    `}
 `;
 
-
-export const FeaturedProducts = styled("p")`
+export const FeaturedProducts = styled('p')`
   color: #242424;
   font-size: 32px;
   font-weight: bold;
@@ -117,61 +115,55 @@ export const WrapperRow = styled(Row)`
   align-items: center;
   display: flex;
   justify-content: center;
-  height:62px;
-  margin-bottom:34px;
+  height: 62px;
+  margin-bottom: 34px;
 `;
 
 export const FeaturedProductsContainer = styled(Column)`
-  background: #F7F8FC;
+  background: #f7f8fc;
   height: auto;
   opacity: 1;
   width: 100%;
-  min-height:948px;
+  min-height: 948px;
 `;
 export const WrapperDots = styled(Row)`
-align-items:center;
-height:40px;
-justify-content: flex-end;
-margin:10px 0px;
-width:auto;
-margin: 0px;
+  align-items: center;
+  height: 40px;
+  justify-content: flex-end;
+  margin: 10px 0px;
+  width: auto;
+  margin: 0px;
 `;
 export const CardsCategory = styled(Row)`
   margin-top: 2rem;
-`
-
+`;
 
 export const RowInnerSlider = styled(Row)`
-justify-content: space-between;
-margin-top:43px;
-border-radius: 16px;
-overflow: hidden;
+  justify-content: space-between;
+  margin-top: 43px;
+  border-radius: 16px;
+  overflow: hidden;
 `;
-
 
 export const DicountCircle = styled('div')`
-display:flex;
-justify-content: center;
-align-items: center;
-margin-top:43px;
-width:78px;
-height:78px;
-position: absolute;
-border-radius: 50%;
-background: #FC4059 0% 0% no-repeat padding-box;
-color:white;
-text-align: center;
-font-weight: bold;
-position: absolute;
-right:22px;
-top:-36px
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 43px;
+  width: 78px;
+  height: 78px;
+  position: absolute;
+  border-radius: 50%;
+  background: #fc4059 0% 0% no-repeat padding-box;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  right: 22px;
+  top: -36px;
 `;
 
-
-
-
-
-export const CardContainerWithoutLink = styled(Column) <{
+export const CardContainerWithoutLink = styled(Column)<{
   widthBorder: boolean;
 }>`
   height: 100%;
@@ -179,14 +171,14 @@ export const CardContainerWithoutLink = styled(Column) <{
   position: relative;
   overflow: hidden;
 
-  min-width:520px;
-  width:520px;
-  ${(props) =>
-    props.widthBorder
-    && css`
-  box-shadow: 0px 2px 20px #08091E1A;
-  border-left: 1px solid #F2F2F2;
-  `}
+  min-width: 520px;
+  width: 520px;
+  ${props =>
+    props.widthBorder &&
+    css`
+      box-shadow: 0px 2px 20px #08091e1a;
+      border-left: 1px solid #f2f2f2;
+    `}
   text-decoration: none;
   align-items: center;
   background: #ffffff;
@@ -199,6 +191,6 @@ export const CardContainerWithoutLink = styled(Column) <{
   width: 100%;
   margin: 20px;
   &:first-child and :last-child {
-    margin:0px;
+    margin: 0px;
   }
 `;

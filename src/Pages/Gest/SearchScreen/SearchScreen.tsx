@@ -1,16 +1,8 @@
-import React from 'react'
-
-interface Props {
-    
-}
-
-export const SearchScreen = (props: Props) => {
-    return (
-        <div>
-            SearchScreen
-        </div>
-    )
-}
+import React from 'react';
 
 
-export  default SearchScreen
+export const SearchScreen = () => {
+  return <div>SearchScreen</div>;
+};
+
+export default SearchScreen;

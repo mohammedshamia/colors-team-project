@@ -1,4 +1,5 @@
-import Styled from 'styled-components'
+import Styled from 'styled-components';
+
 export const SpinnerContainer = Styled.div`
   display: inline-block;
   width: 80px;
@@ -20,4 +21,4 @@ export const SpinnerContainer = Styled.div`
       -webkit-transform: rotate(360deg);
     }
   }
-`
+`;
