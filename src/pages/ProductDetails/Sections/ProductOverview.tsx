@@ -1,10 +1,10 @@
 import {
-  Container,
   Button,
   Circle,
-  Typography,
+  Container,
   Icon,
   Image,
+  Typography,
 } from '../../../components';
 
 const ProductOverview: React.FC = () => {
