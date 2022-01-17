@@ -50,7 +50,12 @@ export const Content = styled('div')<IcontentProp>(
 );
 
 export const Header = styled('div')(
-  ({ height = '50px', width = '100%', padding = '10px' }: IheaderProps) => ({
+  ({
+    height = '50px',
+    width = '100%',
+    padding = '10px',
+  }: // ...props
+  IheaderProps) => ({
     display: 'flex',
     height: `${height}`,
     width: `${width}`,
@@ -75,6 +80,7 @@ export const ContentAction = styled.div<CSSProperties>(
     height = 'none',
     border = 'none',
     margin = '5px auto',
+    // ...props
   }) => ({
     display: 'flex',
     padding: `${padding}`,
@@ -96,5 +102,27 @@ export const HoverConentAction = styled(ContentAction)`
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     cursor: pointer;
+  }
+`;
+
+export interface ICardMedia {
+  padding?: string;
+  float?: string;
+  width?: string;
+  space?: boolean;
+  src?: string;
+}
+
+export const CardMedia = styled.img<ICardMedia>`
+  padding: ${props => props.padding || 'none'};
+  width: ${props => props.width || '100%'};
+  max-height: ${props => (props.space ? '100px' : 'none')};
+  src: ${props => props.src};
+  border: '1px solid black';
+  height: 100%;
+  &:hover {
+    opacity: 0.1;
+    font-size: 20px;
+    ba: rgba(0, 0, 0, 0.5);
   }
 `;
