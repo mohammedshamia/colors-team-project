@@ -25,7 +25,7 @@ const ButtonStyle = styled.button<IStyleButton>(
     borderRadius: `${borderRadius}`,
     border: `${border}`,
     fontWeight: `${fontWeight}`,
-    background: `${props.theme.background?.lightGrey || background}`,
+    background: `${background || props.theme.background?.lightGrey}`,
     color: `${color}`,
     fontSize: `${fontSize}`,
     cursor: `${cursor}`,

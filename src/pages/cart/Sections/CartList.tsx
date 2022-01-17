@@ -1,9 +1,7 @@
 import React from 'react';
 import { GrFormClose } from 'react-icons/gr';
-import { Container } from '../../../components';
-import Image from '../../../components/Image';
-import Typography from '../../../components/Typography';
-import { CloseIcon, ItemTitle, OldPrice } from '../styles';
+import { Container, Counter, Image, Typography } from '../../../components';
+import { CloseIcon, OldPrice, ItemTitle, WrapCounter } from '../styles';
 
 const CartList = ({ item }: any) => {
   const handleRemoveFormCart = (id: string) => {
@@ -49,7 +47,9 @@ const CartList = ({ item }: any) => {
           />
         </ItemTitle>
       </Container>
-      <div style={{ width: '25%' }}>Counter</div>
+      <WrapCounter>
+        <Counter />
+      </WrapCounter>
       <Typography
         children={String(`$${item.price}`)}
         variant="h2"

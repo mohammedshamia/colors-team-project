@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { GlobalStyle } from './styles';
-import { Container } from '../../components';
-import Path from '../../components/Path';
+import { Container, Path } from '../../components';
 import CartList from './Sections/CartList';
 import Subtotal from './Sections/Subtotal';
 // import { useDispatch, useSelector } from 'react-redux';
