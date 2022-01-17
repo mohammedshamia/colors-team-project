@@ -4,12 +4,11 @@ import { ThemeProvider } from 'styled-components';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-
-import Store from './Redux/store';
+import store from './redux/store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={Store}>
+    <Provider store={store}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
