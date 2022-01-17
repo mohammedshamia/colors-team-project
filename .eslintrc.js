@@ -1,8 +1,3 @@
-/*
- - Severity should be one of the following: [0 = off],[1 = warning],[2 = error] (you passed "3").
- - ESLint Documentation https://eslint.org/docs/user-guide/getting-started you can find information 
-   about all of these rules
-*/
 module.exports = {
   extends: [
     'airbnb',
@@ -29,7 +24,7 @@ module.exports = {
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: ['.ts', '.tsx'],
+        extensions: ['.ts', '.tsx', '.Style'],
       },
     ],
     'prettier/prettier': [
