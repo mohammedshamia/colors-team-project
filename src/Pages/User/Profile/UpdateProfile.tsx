@@ -1,10 +1,8 @@
 /* eslint-disable no-lone-blocks */
-import React, { useEffect } from 'react'
-
+import React, { useEffect } from 'react';
 
 const UpdateProfile = () => {
-  return(<p>UpdateProfile</p>)
+  return <p>UpdateProfile</p>;
+};
 
-}
-
-export default UpdateProfile
+export default UpdateProfile;

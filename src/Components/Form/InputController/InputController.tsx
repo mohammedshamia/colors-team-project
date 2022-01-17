@@ -9,7 +9,7 @@ import {
   InputWrapper,
   Label,
   WrapperIcon,
-} from './InputController.style';
+} from './InputControllerStyle';
 
 interface InputControllerProps {
   name: string;

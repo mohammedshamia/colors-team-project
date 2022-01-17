@@ -5,7 +5,7 @@ import {
   ErrorImageContainer,
   ErrorImageOverlay,
   ErrorImageText,
-} from './ErrorBoundary.style';
+} from './ErrorBoundaryStyle';
 
 interface Props {
   children: React.ReactNode;

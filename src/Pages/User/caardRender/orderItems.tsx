@@ -1,13 +1,7 @@
-import { Column } from "../../../Components/Row"
+import { Column } from '../../../Components/Row';
 
- const OrderItems = () => {
+const OrderItems = () => {
+  return <Column>OrderItems</Column>;
+};
 
-     return (
-       <Column>
-         OrderItems
-       </Column>
-     )
-}
-
-
-export  default OrderItems;
+export default OrderItems;

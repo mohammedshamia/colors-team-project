@@ -1,24 +1,25 @@
-import styled from 'styled-components';
+import styled, { DefaultTheme } from 'styled-components';
 
-interface IdividerProps {
+interface IDividerProps {
   width?: string;
   thick?: string;
   color?: string;
   margin?: string;
 }
 
-export const Divider = styled('hr')<IdividerProps>(
+const Divider = styled('hr')<IDividerProps>(
   ({
     width = '100%',
     thick = '0',
-    color = 'black',
     margin = '0px',
     ...props
-  }: IdividerProps) => ({
+  }: IDividerProps) => ({
     margin: `${margin}`,
     width: `${width}`,
     height: `${thick}`,
-    color: `${color}`,
+    background: `${props.color}`,
     borderRadius: '4px',
   }),
 );
+
+export default Divider;

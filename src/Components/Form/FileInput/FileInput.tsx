@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 import React, { ChangeEvent, ReactNode } from 'react';
 import { AiOutlinePlus } from 'react-icons/ai';
-import { InputFile, WarperFileBox } from '../CheckBox/CheckBox.style';
+import { InputFile, WarperFileBox } from '../CheckBox/CheckBoxStyle';
 
 interface Props {
   name?: string;

@@ -16,12 +16,13 @@ import {
   Remmber,
   ButtonLogin,
   LeftLogin,
-} from '../Login/login.style';
+} from '../Login/loginsStyle';
 import {
   schemaValidationSignUp as validationSchema,
   schemaValidationSignUpType,
 } from '../../../Helper/validation';
-import LoginImage from '../../../Assets/Images/singup.png';
+import LoginImage from '../../../assets/Images/singup.png';
+
 import { Column, InnerColSection, InnerSection } from '../../../Components/Row';
 import { InputController } from '../../../Components/Form';
 import { CheckBox } from '../../../Components/Form/CheckBox/CheckBox';

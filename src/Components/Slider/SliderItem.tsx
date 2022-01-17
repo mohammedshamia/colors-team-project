@@ -8,7 +8,7 @@ import {
   DescriptionText,
   ButtonHero,
   ImageSlider,
-} from './Slider.style';
+} from './SliderStyle';
 
 interface Props {
   _id: string;

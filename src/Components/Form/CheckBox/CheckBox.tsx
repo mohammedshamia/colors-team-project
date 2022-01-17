@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions */
 import React, { ChangeEvent, ReactNode } from 'react';
-import { Checkbox, Remember, WarperCheckBox } from './CheckBox.style';
+import { Checkbox, Remember, WarperCheckBox } from './CheckBoxStyle';
 
 interface Props {
   name?: string;

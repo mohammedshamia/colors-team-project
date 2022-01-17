@@ -9,7 +9,7 @@ import {
   Title,
 } from '../../../../Components/DeviderTitle/style';
 import { Column, Row } from '../../../../Components/Row';
-import { Dot } from '../../../../Components/Slider/Slider.style';
+import { Dot } from '../../../../Components/Slider/SliderStyle';
 import { CardsCategory, WrapperDots } from './FeaturedProducts/styles';
 
 interface IObjFeaturedCategories {

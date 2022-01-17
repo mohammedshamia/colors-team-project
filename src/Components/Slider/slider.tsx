@@ -5,7 +5,7 @@ import SwipeableViews from 'react-swipeable-views';
 import { SliderItem } from './SliderItem';
 import { Column } from '../Col';
 import { InnerSection, Row } from '../Row';
-import { Arrow, Dot, RowArrowWrapper } from './Slider.style';
+import { Arrow, Dot, RowArrowWrapper } from './SliderStyle';
 
 const cssStyle: CSSProperties = {
   position: 'relative',

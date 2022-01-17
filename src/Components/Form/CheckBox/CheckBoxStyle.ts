@@ -22,7 +22,6 @@ export const WarperFileBox = styled(Row)`
   border: 1px dashed #707070;
   justify-content: center;
   align-items: center;
- 
 `;
 export const Checkbox = styled('input').attrs({
   type: 'checkbox',

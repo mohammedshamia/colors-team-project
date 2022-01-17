@@ -16,9 +16,9 @@ import {
   Remmber,
   LeftLogin,
   ButtonLogin,
-} from './login.style';
+} from './loginsStyle';
 import { schemaValidationLogin as validationSchema } from '../../../Helper/validation';
-import LoginImage from '../../../Assets/Images/login.png';
+import LoginImage from '../../../assets/Images/login.png';
 import { Column, InnerColSection, InnerSection } from '../../../Components/Row';
 import { InputController } from '../../../Components/Form';
 import { CheckBox } from '../../../Components/Form/CheckBox/CheckBox';

@@ -1,12 +1,11 @@
-import { Column } from "../../../Components/Row"
+import { Column } from '../../../Components/Row';
 
- const ShoppingCart = () => {
-
+const ShoppingCart = () => {
   return (
     <Column>
-     <p>ShoppingCart</p>
+      <p>ShoppingCart</p>
     </Column>
-  )
-}
+  );
+};
 
-export default ShoppingCart
+export default ShoppingCart;

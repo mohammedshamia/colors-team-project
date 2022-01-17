@@ -20,7 +20,7 @@ import {
   SearchInput,
   NavInnerSection,
   NavBoxLogo,
-} from './NavBar.styles';
+} from './NavBarStyles';
 
 export const Navbar = () => {
   const [value, setValue] = useState<string>('');

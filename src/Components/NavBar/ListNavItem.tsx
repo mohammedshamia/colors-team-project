@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions */
 import { FC } from 'react';
-import { ListItem, CustomLink, Badge, NavTitle } from './NavBar.styles';
+import { ListItem, CustomLink, Badge, NavTitle } from './NavBarStyles';
 
 interface Props {
   title: string;
