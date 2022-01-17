@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Divider, Typography } from '../../../components';
+import { Button, Container, Divider, Typography } from '../../../Components';
 
 const Subtotal = () => {
   return (

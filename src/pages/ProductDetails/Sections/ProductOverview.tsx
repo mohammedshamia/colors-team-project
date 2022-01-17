@@ -1,11 +1,4 @@
-import {
-  Container,
-  Button,
-  Circle,
-  Typography,
-  Icon,
-  Image,
-} from '../../../components';
+import { Button, Circle, Container, Icon, Image, Typography } from "../../../Components";
 
 const ProductOverview: React.FC = () => {
   return (

@@ -5,7 +5,7 @@ import {
   Typography,
   Icon,
   Image,
-} from '../../../components';
+} from '../../../Components';
 
 const Specifications: React.FC = () => {
   return <Container>dd</Container>;
