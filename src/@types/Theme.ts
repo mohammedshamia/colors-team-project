@@ -1,4 +1,1 @@
-
-export const  theme={
-    
-}
+export const theme = {};

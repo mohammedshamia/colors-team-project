@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import { Column } from '../Row';
 import { ColumnCusom, Title, Divider } from './style';
 

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Column, Row } from '../../../../../Components/Row';
+import { Column, Row } from '../../../../../components/Row';
 
 export const ContainerCard = styled(Link)`
   align-items: center;

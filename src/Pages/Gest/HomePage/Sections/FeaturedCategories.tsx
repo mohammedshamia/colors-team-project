@@ -1,15 +1,15 @@
 /* eslint-disable import/extensions */
 import React, { useState, CSSProperties, Props } from 'react';
 import SwipeableViews from 'react-swipeable-views';
-import CategoriesCard from '../../../../Components/categoriesCard/CategoriesCard';
-import { DeviderTitle } from '../../../../Components/DeviderTitle/deviderTitle';
+import CategoriesCard from '../../../../components/categoriesCard/CategoriesCard';
+import { DeviderTitle } from '../../../../components/DeviderTitle/deviderTitle';
 import {
   ColumnCusom,
   Divider,
   Title,
-} from '../../../../Components/DeviderTitle/style';
-import { Column, Row } from '../../../../Components/Row';
-import { Dot } from '../../../../Components/Slider/SliderStyle';
+} from '../../../../components/DeviderTitle/style';
+import { Column, Row } from '../../../../components/Row';
+import { Dot } from '../../../../components/Slider/SliderStyle';
 import { CardsCategory, WrapperDots } from './FeaturedProducts/styles';
 
 interface IObjFeaturedCategories {

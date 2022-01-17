@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { InnerSection } from '../../../Components/Row';
+import { InnerSection } from '../../../components/Row';
 
 function NotFoundScreen() {
   return (

@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 import React from 'react';
-import { DeviderTitle } from '../../../../../Components/DeviderTitle/deviderTitle';
-import { InnerSection } from '../../../../../Components/Row';
+import { DeviderTitle } from '../../../../../components/DeviderTitle/deviderTitle';
+import { InnerSection } from '../../../../../components/Row';
 import { CardItem } from '../FeaturedProducts/CardItem';
 import { IProduct } from '../FeaturedProducts/FeaturedProducts';
 import { RowWithRadius, CustomTopRate, CustomInnerSection } from './style';

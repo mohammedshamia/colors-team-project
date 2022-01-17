@@ -1,10 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { HelmetProvider } from 'react-helmet-async';
-import { AllRouter } from './AllRouter';
-import Store from './Redux/store';
-import GlobalStyle from './Theme/GloableStyle';
-import { theme } from './Theme';
+import { theme } from './theme/index';
+import GlobalStyle from './theme/GloableStyle';
 
 export const Providers: React.FC = ({ children }) => {
   return (

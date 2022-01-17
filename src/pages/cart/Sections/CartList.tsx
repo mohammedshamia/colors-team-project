@@ -1,6 +1,6 @@
 import React from 'react';
 import { GrFormClose } from 'react-icons/gr';
-import { Container, Counter, Image, Typography } from '../../../Components';
+import { Container, Counter, Image, Typography } from '../../../components';
 import { CloseIcon, OldPrice, ItemTitle, WrapCounter } from '../styles';
 
 const CartList = ({ item }: any) => {

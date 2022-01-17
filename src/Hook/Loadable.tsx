@@ -1,5 +1,5 @@
 import { Suspense, LazyExoticComponent, ComponentType } from 'react';
-import { SpinnerContainer } from '../Components/widget/SpinnerContainer';
+import { SpinnerContainer } from '../components/widget/SpinnerContainer';
 
 // -----------------------|| LOADABLE - LAZY LOADING ||-----------------------//
 

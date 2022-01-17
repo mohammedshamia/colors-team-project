@@ -1,4 +1,4 @@
-import { Column } from '../../../Components/Row';
+import { Column } from '../../../components/Row';
 
 const ShoppingCart = () => {
   return (

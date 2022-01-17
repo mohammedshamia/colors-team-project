@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Row } from "../../../Components/Row";
+import React, { useState } from 'react';
+import { Row } from '../../../components/Row';
 
 interface Props {
   imge: string;

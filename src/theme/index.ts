@@ -1,23 +1,22 @@
 import { DefaultTheme } from 'styled-components';
 
 export const theme: DefaultTheme = {
-  main:'#FCDD06',
+  main: '#FCDD06',
 
-  nav:{
-      Bg: '#242424',
-      textColor: 'white',
-       logo:{
-      leftText:"#FCDD06",
-      rightText:"#FFFFFF"
-    }
+  nav: {
+    Bg: '#242424',
+    textColor: 'white',
+    logo: {
+      leftText: '#FCDD06',
+      rightText: '#FFFFFF',
+    },
   },
 
   hero: {
-      textBold: '#242424',
-      text: '#242424',
-      main: '#FCDD06',
-      secandry: '#707070',
-
+    textBold: '#242424',
+    text: '#242424',
+    main: '#FCDD06',
+    secandry: '#707070',
   },
 
   common: {

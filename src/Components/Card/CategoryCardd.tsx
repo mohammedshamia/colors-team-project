@@ -1,5 +1,5 @@
 import Typography from '../Typography';
-import { Content, ContentAction, MainCard } from './cardStyles';
+import { Content, ContentAction, MainCard } from './CardStyless';
 import img from '../../assets/tow.jpg';
 
 const CategoryCard = () => {

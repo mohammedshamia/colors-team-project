@@ -4,37 +4,37 @@ import { lazy } from 'react';
 import { PrivateRoute } from './Hook/PrivaterRouter';
 import Loadable from './Hook/Loadable';
 
-// import ProfilePage  from"./Pages/User/Profile/Profile"
+// import ProfilePage  from"./pages/User/Profile/Profile"
 
-const Signup = Loadable(lazy(() => import('./Pages/Auth/Signup/Signup')));
-const Login = Loadable(lazy(() => import('./Pages/Auth/Login/Login')));
+const Signup = Loadable(lazy(() => import('./pages/Auth/Signup/Signup')));
+const Login = Loadable(lazy(() => import('./pages/Auth/Login/Login')));
 const NotFoundScreen = Loadable(
-  lazy(() => import('./Pages/Gest/NotFoundScreen/NotFoundScreen')),
+  lazy(() => import('./pages/Gest/NotFoundScreen/NotFoundScreen')),
 );
 const ProductItem = Loadable(
-  lazy(() => import('./Pages/Gest/ProductItem/ProductItem')),
+  lazy(() => import('./pages/Gest/ProductItem/ProductItem')),
 );
 const SearchScreen = Loadable(
-  lazy(() => import('./Pages/Gest/SearchScreen/SearchScreen')),
+  lazy(() => import('./pages/Gest/SearchScreen/SearchScreen')),
 );
-const HomePage = Loadable(lazy(() => import('./Pages/Gest/HomePage/HomePage')));
+const HomePage = Loadable(lazy(() => import('./pages/Gest/HomePage/HomePage')));
 const ProfilePage = Loadable(
-  lazy(() => import('./Pages/User/Profile/Profile')),
+  lazy(() => import('./pages/User/Profile/Profile')),
 );
 const UpdateProfilePage = Loadable(
-  lazy(() => import('./Pages/User/Profile/UpdateProfile')),
+  lazy(() => import('./pages/User/Profile/UpdateProfile')),
 );
 const CartPage = Loadable(
-  lazy(() => import('./Pages/User/ShoppingCart/ShoppingCart')),
+  lazy(() => import('./pages/User/ShoppingCart/ShoppingCart')),
 );
 const Review = Loadable(
-  lazy(() => import('./Pages/User/payment/review/review')),
+  lazy(() => import('./pages/User/payment/review/review')),
 );
 const PaymentSuccess = Loadable(
-  lazy(() => import('./Pages/User/PaymentSuccess/PaymentSuccess')),
+  lazy(() => import('./pages/User/PaymentSuccess/PaymentSuccess')),
 );
 const OrderItems = Loadable(
-  lazy(() => import('./Pages/User/caardRender/orderItems')),
+  lazy(() => import('./pages/User/caardRender/orderItems')),
 );
 
 /** there  is  3  role one  of  thim  is  user  and  gest  and the   */

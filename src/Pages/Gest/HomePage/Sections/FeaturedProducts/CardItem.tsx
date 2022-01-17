@@ -17,7 +17,7 @@ import {
   DiscountCard,
   DicountCircle,
 } from './styles';
-import { Row } from '../../../../../Components/Row';
+import { Row } from '../../../../../components/Row';
 
 const style: CSSProperties = {
   width: '24px',

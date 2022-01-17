@@ -13,16 +13,15 @@ import {
   WrapperRemmber,
   ForgotPassword,
   ButtonSuginup,
-  Remmber,
   LeftLogin,
   ButtonLogin,
 } from './loginsStyle';
 import { schemaValidationLogin as validationSchema } from '../../../Helper/validation';
 import LoginImage from '../../../assets/Images/login.png';
-import { Column, InnerColSection, InnerSection } from '../../../Components/Row';
-import { InputController } from '../../../Components/Form';
-import { CheckBox } from '../../../Components/Form/CheckBox/CheckBox';
-import { Divider } from '../../../Components/DeviderTitle/style';
+import { Column, InnerColSection, InnerSection } from '../../../components/Row';
+import { InputController } from '../../../components/Form';
+import { CheckBox } from '../../../components/Form/CheckBox/CheckBox';
+import { Divider } from '../../../components/DeviderTitle/style';
 
 export interface IInitialValues {
   email: string;

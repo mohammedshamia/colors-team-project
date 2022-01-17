@@ -4,7 +4,7 @@ import {
   IcontentProp,
   IheaderProps,
   IactionProps,
-} from './interface';
+} from './Interfaces';
 
 export const MainCard = styled('div')<IstyleMainCard>(
   ({
@@ -123,6 +123,6 @@ export const CardMedia = styled.img<ICardMedia>`
   &:hover {
     opacity: 0.1;
     font-size: 20px;
-    ba: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 `;

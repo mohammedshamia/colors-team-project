@@ -8,10 +8,10 @@ import {
   WrapperDots,
   RowInnerSlider,
 } from './styles';
-import { SpinnerContainer } from '../../../../../Components/widget/SpinnerContainer';
-import { InnerSection } from '../../../../../Components/Row';
-import { Dot } from '../../../../../Components/Slider/SliderStyle';
-import { DeviderTitle } from '../../../../../Components/DeviderTitle/deviderTitle';
+import { SpinnerContainer } from '../../../../../components/widget/SpinnerContainer';
+import { InnerSection } from '../../../../../components/Row';
+import { Dot } from '../../../../../components/Slider/SliderStyle';
+import { DeviderTitle } from '../../../../../components/DeviderTitle/deviderTitle';
 
 interface Props {
   data: IProduct[];

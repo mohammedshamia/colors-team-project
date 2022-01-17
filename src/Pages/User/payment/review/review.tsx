@@ -1,5 +1,5 @@
 import React from 'react';
-import { Column } from '../../../../Components/Row';
+import { Column } from '../../../../components/Row';
 
 const Review = () => {
   return <Column>Review</Column>;

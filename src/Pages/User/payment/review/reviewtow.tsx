@@ -1,9 +1,5 @@
-import { Column } from "../../../../Components/Row"
+import { Column } from '../../../../components/Row';
 
 export const ReviewTow = () => {
-    return (
-        <Column>
-       ReviewTow
-            </Column>
-    )
-}
+  return <Column>ReviewTow</Column>;
+};

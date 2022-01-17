@@ -1,7 +1,7 @@
 import React from 'react';
-import { InputController } from '../../../Components/Form/InputController/InputController';
-import { Slider } from '../../../Components/Slider/slider';
-import { InnerColSection, Row } from '../../../Components/Row';
+import { InputController } from '../../../components/Form/InputController/InputController';
+import { Slider } from '../../../components/Slider/slider';
+import { InnerColSection, Row } from '../../../components/Row';
 import { FeaturedCategories } from './Sections/FeaturedCategories';
 import { FeaturedProducts } from './Sections/FeaturedProducts/styles';
 import { FeaturedProduct } from './Sections/FeaturedProducts/FeaturedProducts';

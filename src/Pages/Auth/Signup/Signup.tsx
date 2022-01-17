@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions */
 import { RiLockPasswordFill } from 'react-icons/ri';
-import { useFormik, Form, FormikHelpers } from 'formik';
+import { useFormik, FormikHelpers } from 'formik';
 import { AiOutlineMail } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 import { GrUserNew } from 'react-icons/gr';
@@ -13,7 +13,6 @@ import {
   WrapperRemmber,
   ForgotPassword,
   ButtonSuginup,
-  Remmber,
   ButtonLogin,
   LeftLogin,
 } from '../Login/loginsStyle';
@@ -23,11 +22,11 @@ import {
 } from '../../../Helper/validation';
 import LoginImage from '../../../assets/Images/singup.png';
 
-import { Column, InnerColSection, InnerSection } from '../../../Components/Row';
-import { InputController } from '../../../Components/Form';
-import { CheckBox } from '../../../Components/Form/CheckBox/CheckBox';
-import { Divider } from '../../../Components/DeviderTitle/style';
-import { FileInput } from '../../../Components/Form/FileInput/FileInput';
+import { Column, InnerColSection, InnerSection } from '../../../components/Row';
+import { InputController } from '../../../components/Form';
+import { CheckBox } from '../../../components/Form/CheckBox/CheckBox';
+import { Divider } from '../../../components/DeviderTitle/style';
+import { FileInput } from '../../../components/Form/FileInput/FileInput';
 
 const initialValues: schemaValidationSignUpType = {
   name: '',

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '../Button/ButtonStyle';
 import Typography from '../Typography';
-import { Content, ContentAction, Header, MainCard } from './cardStyles';
+import { Content, ContentAction, Header, MainCard } from './CardStyless';
 
 const ComplexCard = () => {
   return (

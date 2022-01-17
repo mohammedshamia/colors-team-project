@@ -6,14 +6,16 @@ interface IProps {
   // color?: string;
   size?: string;
   icon: ReactNode;
+  color?: string;
 }
 
-export const Icon = ({ size = '1em', icon }: IProps) => {
+export const Icon = ({ size = '1em', icon, color = 'white' }: IProps) => {
   // const globalStyle = useTheme();
   return (
     <IconContext.Provider
       value={{
         size: `${size}`,
+        color: `${color}`,
         // color: globalStyle
       }}
     >

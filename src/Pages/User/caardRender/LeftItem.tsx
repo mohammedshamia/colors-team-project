@@ -1,9 +1,5 @@
 import React from 'react';
 
-interface Props {
-  m?: string;
-}
-
-export const LeftItem = (props: Props) => {
+export const LeftItem = () => {
   return <div>Proceed to checkout</div>;
 };
