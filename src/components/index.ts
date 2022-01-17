@@ -1,8 +1,7 @@
 export { Providers } from '../providers';
-export { Navbar } from './Navbar/Navbar';
+export { Navbar } from './NavBar';
 export { MainContainer } from './Row';
 export { SpinnerContainer } from './widget/SpinnerContainer';
-
 export { Container } from './Container';
 export { default as Button } from './Button';
 export { default as Circle } from './Circle';
