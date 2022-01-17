@@ -1,4 +1,3 @@
-import React from 'react';
 import { PathLink, PathName, PathWrapper } from './styles';
 // import { useNavigate } from "react-router-dom";
 
