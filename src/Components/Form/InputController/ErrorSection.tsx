@@ -17,7 +17,7 @@ export const ErrorSection = (props: Props) => {
   if (props.touched && props.errors) {
     return (
       <Row JC="space-between" item="center">
-        <p className="text-xs">{props.errors}</p>
+        <p>{props.errors}</p>
         <BiErrorAlt />
       </Row>
     );
