@@ -116,13 +116,21 @@ export interface ICardMedia {
 export const CardMedia = styled.img<ICardMedia>`
   padding: ${props => props.padding || 'none'};
   width: ${props => props.width || '100%'};
+<<<<<<< HEAD:src/Components/Card/CardStyless.ts
   max-height: ${props => (props.space ? '100px' : 'none')};
+=======
+  maxheight: ${props => (props.space ? '100px' : 'none')};
+>>>>>>> 1b47005 (fix conflict):src/components/Card/cardStyles.ts
   src: ${props => props.src};
   border: '1px solid black';
   height: 100%;
   &:hover {
     opacity: 0.1;
     font-size: 20px;
+<<<<<<< HEAD:src/Components/Card/CardStyless.ts
     background-color: rgba(0, 0, 0, 0.5);
+=======
+    backgroundcolor: rgba(0, 0, 0, 0.5);
+>>>>>>> 1b47005 (fix conflict):src/components/Card/cardStyles.ts
   }
 `;

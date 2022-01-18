@@ -1,5 +1,9 @@
 import React from 'react';
-import { Button, Container, Divider, Typography } from '../../../components';
+import Button from '../../../components/Button/Button';
+import { Container } from '../../../components';
+import Divider from '../../../components/Divider';
+import Typography from '../../../components/Typography';
+// import Counter from '../../../components/Counter';
 
 const Subtotal = () => {
   return (
@@ -35,13 +39,6 @@ const Subtotal = () => {
         />
       </Container>
       <Divider color="#E8E8E8" />
-      <Button
-        width="80%"
-        style={{ margin: '30px auto 0 auto' }}
-        background="#FCDD06"
-      >
-        Proceed to checkout
-      </Button>
     </>
   );
 };
