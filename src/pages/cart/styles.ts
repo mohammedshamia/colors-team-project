@@ -8,6 +8,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+export const ItemTitle = styled.a`
+  width: 50%;
+  text-decoration: none;
+  color: #242424;
+  padding-top: 20px;
+`;
+
 export const CloseIcon = styled.i`
   position: absolute;
   top: 17px;
@@ -26,13 +33,20 @@ export const OldPrice = styled.div`
   right: 35px;
 `;
 
-export const ItemTitle = styled.a`
-  width: 50%;
-  text-decoration: none;
+export const PathName = styled.h2`
   color: #242424;
-  padding-top: 20px;
+  font-size: 24px;
+  letter-spacing: 0.96px;
+  font-weight: 500;
 `;
 
-export const WrapCounter = styled.div`
-  background: #fff;
+export const PathLink = styled.a`
+  text-decoration: none;
+  color: #707070;
+  font-size: 24px;
+  letter-spacing: 0.96px;
+  font-weight: 500;
+  &: hover {
+    color: rgba(112, 112, 112, 0.8);
+  }
 `;
